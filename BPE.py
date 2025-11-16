@@ -30,7 +30,7 @@ class BPE:
         self.vocab[most_freq_pair] = max(self.vocab.values())  + 1
 
     def replace_ids(self, ids):
-        new_ids = []
+        new_ids = [] 
         index = 0
         while index < len(ids):
             if index < len(ids) - 1:
